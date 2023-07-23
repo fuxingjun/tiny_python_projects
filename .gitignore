@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.vscode
+**/__pycache__
+build
+dist
+bond_puller.spec
+
+logs
+
+conf.ini
