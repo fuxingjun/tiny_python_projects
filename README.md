@@ -10,9 +10,9 @@ pip install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-ho
 # 打包
 pyinstaller -F src/run.py
 
-# 修改权限
-chmod a+x ./dist/run
-# 或者
+# 增加可执行文件属性
+chmod +x ./dist/run
+# 或者修改权限
 chmod 777 ./dist/run
 
 ```
