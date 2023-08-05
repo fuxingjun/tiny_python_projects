@@ -2,6 +2,7 @@
 .idea
 .vscode
 **/__pycache__
+**/.pytest_cache
 build
 dist
 bond_puller.spec
