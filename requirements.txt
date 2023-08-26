@@ -5,3 +5,4 @@ mypy
 pylint
 pytest
 yapf
+tabulate~=0.8.10

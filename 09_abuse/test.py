@@ -80,7 +80,7 @@ def test_bad_seed():
 
 # --------------------------------------------------
 def test_01():
-    """test"""
+    """test.py"""
 
     out = getoutput(f'{prg} -s 1 -n 1')
     assert out.strip() == 'You filthsome, cullionly fiend!'
@@ -88,7 +88,7 @@ def test_01():
 
 # --------------------------------------------------
 def test_02():
-    """test"""
+    """test.py"""
 
     out = getoutput(f'{prg} --seed 2')
     expected = """
@@ -101,7 +101,7 @@ You insatiate, heedless worm!
 
 # --------------------------------------------------
 def test_03():
-    """test"""
+    """test.py"""
 
     out = getoutput(f'{prg} -s 3 -n 5 -a 1')
     expected = """
@@ -116,7 +116,7 @@ You cullionly worm!
 
 # --------------------------------------------------
 def test_04():
-    """test"""
+    """test.py"""
 
     out = getoutput(f'{prg} --seed 4 --number 2 --adjectives 4')
     expected = """

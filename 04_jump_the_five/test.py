@@ -26,7 +26,7 @@ def test_usage():
 
 # --------------------------------------------------
 def test_01():
-    """test"""
+    """test.py"""
 
     rv, out = getstatusoutput(f'{prg} 123-456-7890')
     assert rv == 0
@@ -35,7 +35,7 @@ def test_01():
 
 # --------------------------------------------------
 def test_02():
-    """test"""
+    """test.py"""
 
     rv, out = getstatusoutput(f'{prg} "That number to call is 098-765-4321."')
     assert rv == 0

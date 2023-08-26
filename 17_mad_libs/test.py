@@ -52,7 +52,7 @@ def test_no_blanks():
 
 # --------------------------------------------------
 def test_fox():
-    """test fox"""
+    """test.py fox"""
 
     args = f'{fox} -i surly car under bicycle'
     rv, out = getstatusoutput(f'{prg} {args}')
@@ -62,7 +62,7 @@ def test_fox():
 
 # --------------------------------------------------
 def test_help():
-    """test help"""
+    """test.py help"""
 
     expected = """
 Hey! I need tacos!
@@ -79,7 +79,7 @@ Arriba!
 
 # --------------------------------------------------
 def test_verona():
-    """test verona"""
+    """test.py verona"""
 
     expected = """
 Two cars, both alike in dignity,

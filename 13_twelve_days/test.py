@@ -40,7 +40,7 @@ def test_usage():
 
 # --------------------------------------------------
 def test_bad_num():
-    """test bad_num"""
+    """test.py bad_num"""
 
     for n in [random.choice(r) for r in (range(-10, -1), range(13, 20))]:
         rv, out = getstatusoutput(f'{prg} -n {n}')
@@ -50,7 +50,7 @@ def test_bad_num():
 
 # --------------------------------------------------
 def test_one():
-    """test one"""
+    """test.py one"""
 
     out = getoutput(f'{prg} -n 1')
     assert out.rstrip() == day_one
@@ -58,7 +58,7 @@ def test_one():
 
 # --------------------------------------------------
 def test_two():
-    """test two"""
+    """test.py two"""
 
     out = getoutput(f'{prg} --num 2')
     assert out == '\n\n'.join([day_one, day_two])
@@ -66,7 +66,7 @@ def test_two():
 
 # --------------------------------------------------
 def test_all_stdout():
-    """test"""
+    """test.py"""
 
     out = getoutput(f'{prg}').splitlines()
     assert len(out) == 113
@@ -78,7 +78,7 @@ def test_all_stdout():
 def test_all():
     """Test 1-12"""
 
-    test_out = './test-out'
+    test_out = './test.py-out'
     assert os.path.isdir(test_out)
 
     for n in range(1, 13):

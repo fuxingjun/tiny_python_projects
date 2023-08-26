@@ -42,7 +42,7 @@ def test_usage():
 
 # --------------------------------------------------
 def test_input():
-    """test for input"""
+    """test.py for input"""
 
     for val in ['Universe', 'Multiverse']:
         for option in ['-n', '--name']:

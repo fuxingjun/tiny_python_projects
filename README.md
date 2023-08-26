@@ -2,7 +2,7 @@
 
 ### 测试代码
 ```bash
-pytest -xv test.py
+pytest -xv test.py.py
 ```
 
 ### 关于打包二进制

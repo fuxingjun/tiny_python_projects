@@ -60,7 +60,7 @@ def test_bad_mutation():
 
 # --------------------------------------------------
 def test_for_echo():
-    """test"""
+    """test.py"""
 
     txt = open(now).read().rstrip()
     rv, out = getstatusoutput(f'{prg} -m 0 "{txt}"')
@@ -70,7 +70,7 @@ def test_for_echo():
 
 # --------------------------------------------------
 def test_now_cmd_s1():
-    """test"""
+    """test.py"""
 
     txt = open(now).read().rstrip()
     rv, out = getstatusoutput(f'{prg} -s 1 "{txt}"')
@@ -83,7 +83,7 @@ def test_now_cmd_s1():
 
 # --------------------------------------------------
 def test_now_cmd_s2_m4():
-    """test"""
+    """test.py"""
 
     txt = open(now).read().rstrip()
     rv, out = getstatusoutput(f'{prg} -s 2 -m .4 "{txt}"')
@@ -96,7 +96,7 @@ def test_now_cmd_s2_m4():
 
 # --------------------------------------------------
 def test_fox_file_s1():
-    """test"""
+    """test.py"""
 
     rv, out = getstatusoutput(f'{prg} --seed 1 {fox}')
     assert rv == 0
@@ -107,7 +107,7 @@ def test_fox_file_s1():
 
 # --------------------------------------------------
 def test_fox_file_s2_m6():
-    """test"""
+    """test.py"""
 
     rv, out = getstatusoutput(f'{prg} --seed 2 --mutations .6 {fox}')
     assert rv == 0
